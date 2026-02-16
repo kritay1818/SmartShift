@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "815466786794",
+    "firebase_url": "https://smartshift-4bdfb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "smartshift-4bdfb",
+    "storage_bucket": "smartshift-4bdfb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815466786794:android:2fef0c9f9f1310af688c93",
+        "android_client_info": {
+          "package_name": "com.smartshift.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF605HkB1tOZZhaGDzNEc7-BebPl7RVeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="שלום, משתמש"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="תפקיד: --"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMonthlyWage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="#E3F2FD"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="שכר מצטבר החודש:"
+                    android:textSize="14sp"
+                    android:textColor="#1565C0"/>
+
+                <TextView
+                    android:id="@+id/tvMonthlyWage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00 ₪"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D47A1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(לחץ לפירוט משמרות)"
+                    android:textSize="12sp"
+                    android:textColor="#64B5F6"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnClockInOut"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="כניסה למשמרת"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnViewShifts"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="צפייה במשמרות (מנהל)"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnManageSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="ניהול סידור עבודה (מנהל)"
+            android:backgroundTint="#3F51B5"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnManageWages"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="עדכון שכר לעובדים (מנהל)"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnViewSalaries"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="דו״ח שכר חודשי (מנהל)"
+            android:backgroundTint="#009688"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSubmitSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="הגשת משמרות"
+            android:backgroundTint="#9C27B0"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnViewMySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="צפייה בסידור עבודה"
+            android:backgroundTint="#673AB7"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btnMarketplace"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFB300"
+            android:text="🤝 שוק החלפות משמרות"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnLiveStatus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#4CAF50"
+            android:text="🟢 מי עובד עכשיו?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnExportPdf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF5722"
+            android:text="📄 הורד תלוש שכר (PDF)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="התנתק"
+            android:backgroundTint="#F44336"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

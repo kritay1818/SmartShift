@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.smartshift.myapplication.models.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.smartshift.myapplication.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.smartshift.myapplication.models.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_request"
+            app:destination="@id/requestShiftFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_managerSchedule"
+            app:destination="@id/managerScheduleFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_workerSchedule"
+            app:destination="@id/workerScheduleFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_shiftsList"
+            app:destination="@id/shiftsListFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_manageWages"
+            app:destination="@id/manageWagesFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_salaryReport"
+            app:destination="@id/salaryReportFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_liveStatus"
+            app:destination="@id/liveStatusFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/requestShiftFragment"
+        android:name="com.smartshift.myapplication.models.RequestShiftFragment"
+        android:label="fragment_request_shift"
+        tools:layout="@layout/fragment_request_shift" />
+
+    <fragment
+        android:id="@+id/managerScheduleFragment"
+        android:name="com.smartshift.myapplication.models.ManageScheduleFragment"
+        android:label="fragment_manage_schedule"
+        tools:layout="@layout/fragment_manage_schedule" />
+
+    <fragment
+        android:id="@+id/workerScheduleFragment"
+        android:name="com.smartshift.myapplication.models.WorkerScheduleFragment"
+        android:label="fragment_worker_schedule"
+        tools:layout="@layout/fragment_worker_schedule" />
+
+    <fragment
+        android:id="@+id/shiftsListFragment"
+        android:name="com.smartshift.myapplication.models.ShiftsListFragment"
+        android:label="fragment_shifts_list"
+        tools:layout="@layout/fragment_shifts_list" />
+
+    <fragment
+        android:id="@+id/manageWagesFragment"
+        android:name="com.smartshift.myapplication.models.ManageWagesFragment"
+        android:label="fragment_manage_wages"
+        tools:layout="@layout/fragment_manage_wages" />
+
+    <fragment
+        android:id="@+id/salaryReportFragment"
+        android:name="com.smartshift.myapplication.models.SalaryReportFragment"
+        android:label="fragment_salary_report"
+        tools:layout="@layout/fragment_salary_report" />
+
+    <fragment
+        android:id="@+id/liveStatusFragment"
+        android:name="com.smartshift.myapplication.models.LiveStatusFragment"
+        android:label="fragment_live_status"
+        tools:layout="@layout/fragment_live_status" />
+    <fragment
+        android:id="@+id/availableShiftsFragment"
+        android:name="com.smartshift.myapplication.models.AvailableShiftsFragment"
+        android:label="fragment_available_shifts"
+        tools:layout="@layout/fragment_available_shifts" />
+
+    <action
+        android:id="@+id/action_dashboard_to_marketplace"
+        app:destination="@id/availableShiftsFragment" />
+
+</navigation>

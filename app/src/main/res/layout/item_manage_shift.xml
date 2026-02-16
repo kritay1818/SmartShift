@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="1dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvShiftDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/2026"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tvShiftTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00 - 16:00 (8.0 שעות)"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvShiftWage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="שכר: 240 ₪"
+            android:textSize="12sp"
+            android:textColor="#4CAF50"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditShift"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="ערוך"
+        android:textSize="12sp"
+        android:backgroundTint="#FF9800"/>
+</LinearLayout>

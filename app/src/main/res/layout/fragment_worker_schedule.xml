@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnPrevWeek"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="&lt;"
+            android:textStyle="bold"
+            android:backgroundTint="#BDBDBD"/>
+
+        <TextView
+            android:id="@+id/tvDateRange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="טוען תאריכים..."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#333333"/>
+
+        <Button
+            android:id="@+id/btnNextWeek"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="&gt;"
+            android:textStyle="bold"
+            android:backgroundTint="#BDBDBD"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="1,2,3"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <TableRow android:background="#E8EAF6" android:padding="10dp">
+            <TextView android:text="יום" android:textStyle="bold" android:gravity="center" android:padding="5dp" android:textColor="#000000"/>
+            <TextView android:text="בוקר" android:textStyle="bold" android:gravity="center" android:padding="5dp" android:textColor="#000000"/>
+            <TextView android:text="צהריים" android:textStyle="bold" android:gravity="center" android:padding="5dp" android:textColor="#000000"/>
+            <TextView android:text="לילה" android:textStyle="bold" android:gravity="center" android:padding="5dp" android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="א'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvSunMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvSunNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvSunNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="ב'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvMonMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvMonNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvMonNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="ג'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvTueMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvTueNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvTueNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="ד'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvWedMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvWedNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvWedNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="ה'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvThuMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvThuNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvThuNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="ו'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvFriMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvFriNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvFriNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp"><TextView android:text="ש'" android:textStyle="bold" android:gravity="center" android:textColor="#000"/>
+            <TextView android:id="@+id/tvSatMorn" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvSatNoon" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+            <TextView android:id="@+id/tvSatNight" android:text="-" android:gravity="center" android:background="#EEE" android:padding="10dp" android:layout_margin="2dp" android:textColor="#000"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSyncCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="📅 סנכרן ליומן גוגל"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="חזור לדשבורד"
+        android:backgroundTint="#757575"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

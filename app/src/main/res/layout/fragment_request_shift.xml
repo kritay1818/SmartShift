@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="הגשת משמרות לשבוע הבא"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#E8EAF6"
+                    android:padding="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="יום"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="בוקר ☀️"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="צהריים 🌤️"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="לילה 🌙"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="ראשון"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbSunMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbSunNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbSunNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="שני"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbMonMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbMonNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbMonNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="שלישי"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbTueMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbTueNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbTueNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="רביעי"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbWedMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbWedNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbWedNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="חמישי"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbThuMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbThuNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbThuNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="שישי"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbFriMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbFriNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbFriNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="שבת"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="right"/>
+
+                    <CheckBox android:id="@+id/cbSatMorn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbSatNoon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:id="@+id/cbSatNight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSubmitRequest"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="שלח בקשה"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="חזור לאזור האישי"
+            android:textColor="#333333"
+            android:backgroundTint="#BDBDBD"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
